@@ -3,7 +3,7 @@ function createNode(element) {
 }
 
 function append(parent, el) {
-  return parent.appendChild(el); // Append the second parameter(element) to the first one
+    return parent.appendChild(el); // Append the second parameter(element) to the first one
 }
 
 const colDiv = document.querySelector('.col');
@@ -47,7 +47,7 @@ fetch ('https://api.treez.io/v1.0/dispensary/goe/menu/product_list?type=all&offs
         thc.className = "thc";
         append(div, thc);
         }
-        
+
         append(div, gramPrice);
         append(gramPrice, gram);
         append(colDiv, div);

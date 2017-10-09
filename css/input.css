@@ -101,17 +101,10 @@ ul {
     font-size: .85em;
     color: #000;
     padding-right: 8px; }
-  @media (min-width: 768px) {
-    .main-nav {
-      display: flex; } }
 
-@media (min-width: 768px) {
-  .main-header {
-    width: 100%;
-    margin: 0 auto;
-    align-items: center; } }
-@media (min-width: 992px) {
-  .main-header {
-    width: 100%; } }
+.main-header {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center; }
 
 /*# sourceMappingURL=input.css.map */

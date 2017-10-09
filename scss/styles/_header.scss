@@ -22,18 +22,10 @@
         color: $black;
         padding-right: 8px;
     }
-    @include mq('med') {
-      @include flexy;
-    }
 }
 
 .main-header{
-
-    @include mq('med') {
       @include wid-med($wid: 100%, $marg: 0 auto);
       align-items: center;
-    }
-    @include mq('lg') {
-      @include wid-med($wid: 100%);
-    }
-  }
+}
+
