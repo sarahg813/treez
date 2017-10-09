@@ -1,0 +1,39 @@
+.name{
+    color: $white;
+    background-color: $color-primary-light;
+    font-family: $font-stack-tertiary;
+    text-align: left;
+    padding: 10px;
+    #firstText{
+        font-size: .95em;
+    }
+    #secondText{
+        font-size: 2em; 
+    }
+}
+
+.main-nav{
+    background-color: $color-menu;
+    font-family: $font-stack-primary;
+    @include flexy($just: center);
+    padding: 15px 15px;
+    a{
+        font-size: .85em;
+        color: $black;
+        padding-right: 8px;
+    }
+    @include mq('med') {
+      @include flexy;
+    }
+}
+
+.main-header{
+
+    @include mq('med') {
+      @include wid-med($wid: 100%, $marg: 0 auto);
+      align-items: center;
+    }
+    @include mq('lg') {
+      @include wid-med($wid: 100%);
+    }
+  }

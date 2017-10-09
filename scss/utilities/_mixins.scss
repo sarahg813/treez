@@ -1,0 +1,41 @@
+//flex container
+@mixin flexy(
+    $disp: flex,
+    $dir: null,
+    $wrap: null,
+    $just: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+}
+  
+//media queries
+@mixin mq($break) {
+    $value: map-get($breakpoints, $break);
+    $sm: map-get($breakpoints, 'sm');
+
+    @if $value == null {
+        @error "`#{$break}` is not a valid breakpoint name.";
+    }
+    @else if $value < $sm {
+        @media (max-width: $value) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $value) {
+            @content;
+        }
+    }
+}
+
+//width mq
+@mixin wid-med (
+    $wid: null,
+    $marg: null,
+    $max-wid:null) {
+        width: $wid;
+        margin: $marg;
+        max-width: $max-wid;
+}

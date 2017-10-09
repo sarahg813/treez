@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  color: #595959; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.item img {
+  max-width: 100%; }
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .col {
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
+      grid-row-gap: 4px; }
+      .col .item {
+        border: 0.25px solid #c0c0c0;
+        border-top: none;
+        padding: 3px;
+        height: 100%; } }
+  @media (min-width: 992px) {
+    .col {
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 1fr;
+      grid-row-gap: 4px; } }
+
+.productBrand {
+  font-size: .75em;
+  text-transform: uppercase; }
+
+.productName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  color: #c0c0c0; }
+
+.productClassification {
+  display: inline;
+  margin: 2px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background-color: #6B9D45;
+  font-size: .65em; }
+
+.thc {
+  display: inline;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 3px;
+  background-color: #f3f3f3;
+  font-size: .65em; }
+
+.gramPrice {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #595959; }
+
+.gram {
+  font-size: .7em;
+  font-weight: 400; }
+
+.name {
+  color: #fff;
+  background-color: #8c8c8c;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: left;
+  padding: 10px; }
+  .name #firstText {
+    font-size: .95em; }
+  .name #secondText {
+    font-size: 2em; }
+
+.main-nav {
+  background-color: #fdfbf9;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px; }
+  .main-nav a {
+    font-size: .85em;
+    color: #000;
+    padding-right: 8px; }
+  @media (min-width: 768px) {
+    .main-nav {
+      display: flex; } }
+
+@media (min-width: 768px) {
+  .main-header {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center; } }
+@media (min-width: 992px) {
+  .main-header {
+    width: 100%; } }
+
+/*# sourceMappingURL=input.css.map */

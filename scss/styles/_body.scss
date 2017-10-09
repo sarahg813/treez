@@ -1,0 +1,70 @@
+.item img{
+    max-width: 100%;
+}
+
+.col{
+    @include flexy($wrap: wrap, $just: center);
+    align-items: center;
+    padding: 10px;
+    @include mq('med') {
+        @include wid-med($wid: 100%, $marg: 0 auto);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        grid-row-gap: 4px;
+        .item{
+            border: .25px solid $color-secondary;
+            border-top: none;
+            padding: 3px;
+            height: 100%;
+        }
+    }
+    @include mq('lg') {
+        @include wid-med($wid: 100%, $max-wid: 1200px);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1fr;
+        grid-row-gap: 4px;
+    }
+}
+
+.productBrand{
+    font-size: .75em;
+    text-transform: uppercase;
+}
+
+.productName{
+    font-family: $font-stack-secondary;
+    font-size: 1.5em;
+    color: $color-secondary;
+}
+
+.productClassification{
+    display: inline;
+    margin: 2px;
+    padding: 0 5px;
+    border-radius: 3px;
+    background-color: $color-classifications;
+    font-size: .65em;
+}
+
+.thc{
+    display: inline;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 3px;
+    background-color: $color-secondary-light;
+    font-size: .65em;
+}
+
+.gramPrice{
+    font-family: $font-stack-primary;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: $color-primary;
+}
+
+.gram {
+    font-size: .7em;
+    font-weight: 400;
+}

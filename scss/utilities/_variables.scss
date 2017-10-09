@@ -1,0 +1,23 @@
+// the variables
+
+//colors
+$white: #fff;
+$black: #000;
+$color-primary: #595959; //dark gray
+$color-secondary: #c0c0c0; //light gray
+$color-primary-light: lighten($color-primary, 20%);
+$color-secondary-light: lighten($color-secondary, 20%);
+$color-menu: #fdfbf9; // beige
+$color-classifications: #6B9D45;
+
+//fonts
+$font-stack-primary: 'Roboto', sans-serif;
+$font-stack-secondary: 'Montserrat', sans-serif;
+$font-stack-tertiary: 'Roboto Condensed', sans-serif;
+
+// breakpoints
+$breakpoints: (
+  'sm': 576px,
+ 'med': 768px,
+  'lg': 992px,
+);
